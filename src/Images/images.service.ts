@@ -1,5 +1,5 @@
 import { Injectable, BadRequestException } from '@nestjs/common';
-import { CLOUDFRONT_URL } from '../utils/constants';
+import { CLOUDFRONT_URL } from '../common/constants';
 
 const allowedSizes = new Set(['24', '32', '40', '50']);
 const allowedTypes = new Set(['png', 'svg']);

@@ -1,5 +1,5 @@
 import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
-import { getNftDetail } from '../../utils/gamma';
+import { getNftDetail } from '../../common/gamma';
 
 @Injectable()
 export class NftDetailService {

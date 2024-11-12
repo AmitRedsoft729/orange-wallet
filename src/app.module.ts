@@ -5,7 +5,6 @@ import { PriceStxModule } from './Price/stx-btc-price/stx.module';
 import { BtcPriceModule } from './Price/btc-price/btc-price.module';
 import { InfoModule } from './Info/info.module';
 import { SignUrlModule } from './Sign-Url/sign-url.module';
-import { checkTestnet } from './utils/helpers';
 import { NftDetailModule } from './NFT/nft-details/nft-details.module';
 import { NftCollectionModule } from './NFT/nft-collections/nft-collection.module';
 import { EthModule } from './Ethereum/eth.module';
@@ -18,6 +17,9 @@ import { OrdinalUtxoModule } from './Ordinal-Utxo/ordinal-utxo.module';
 import { Brc20TokenBalanceModule } from './Brc20/brc20-token-balance.module';
 import { BtcNameResolveModule } from './Btc-Name/btc-name-resolve.module';
 import { ImagesModule } from './Images/images.module';
+import { OrdinalsModule } from './Ordinals/ordinals.module';
+import { CoinsModule } from './Coins/coins.module';
+import { CheckTestnetMiddleware } from './middleware/check-testnet.middleware';
 @Module({
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
@@ -38,10 +40,12 @@ import { ImagesModule } from './Images/images.module';
     Brc20TokenBalanceModule,
     BtcNameResolveModule,
     ImagesModule,
+    OrdinalsModule,
+    CoinsModule,
   ],
 })
 export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
-    consumer.apply(checkTestnet).forRoutes('*');
+    consumer.apply(CheckTestnetMiddleware).forRoutes('*');
   }
 }

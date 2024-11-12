@@ -1,6 +1,6 @@
 import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
 import * as crypto from 'crypto';
-import { MOONPAY_KEY } from '../utils/constants';
+import { MOONPAY_KEY } from '../common/constants';
 
 @Injectable()
 export class SignUrlService {

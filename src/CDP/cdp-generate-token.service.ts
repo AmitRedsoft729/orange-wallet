@@ -2,8 +2,8 @@ import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
 import axios from 'axios';
 import { SignOptions, sign } from 'jsonwebtoken';
 import * as crypto from 'crypto';
-import { CDP_SECRET, COINBASE_DEVELOPER_API } from '../utils/constants';
-import { validateAddress } from '../utils/helpers';
+import { CDP_SECRET, COINBASE_DEVELOPER_API } from '../common/constants';
+// import { validateAddress } from '../utils/helpers';
 
 @Injectable()
 export class CdpGenerateTokenService {

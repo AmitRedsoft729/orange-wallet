@@ -4,7 +4,7 @@ import {
   API_TIMEOUT,
   BLOCKCHAIN_INFO_API,
   XVERSE_TESTNET_API,
-} from '../utils/constants';
+} from '../common/constants';
 
 @Injectable()
 export class FeeService {

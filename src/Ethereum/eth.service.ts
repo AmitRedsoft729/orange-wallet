@@ -1,6 +1,6 @@
 import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
 import { web3 } from '../config/web3';
-import { ERC721_ABI } from '../utils/constants';
+import { ERC721_ABI } from '../common/constants';
 
 @Injectable()
 export class EthService {

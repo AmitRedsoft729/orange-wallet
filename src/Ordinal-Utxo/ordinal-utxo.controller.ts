@@ -1,7 +1,7 @@
 import { Controller, Get, Param, Req, Res } from '@nestjs/common';
 import { Response } from 'express';
 import { OrdinalUtxoService } from './ordinal-utxo.service';
-import { ApiRequest } from '../utils/helpers';
+import { ApiRequest } from '../common/helpers';
 
 @Controller('ordinal-utxo')
 export class OrdinalUtxoController {

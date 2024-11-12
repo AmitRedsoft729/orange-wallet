@@ -4,7 +4,7 @@ import {
   HIRO_INSCRIPTIONS_API,
   BESTINSLOT_TESTNET_API,
   BESTINSLOT_API_KEY,
-} from '../../utils/constants';
+} from '../../common/constants';
 
 @Injectable()
 export class OrdinalInscriptionService {

@@ -1,6 +1,6 @@
 import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
 import axios from 'axios';
-import { MEMPOOL_SPACE_API, XVERSE_TESTNET_API } from '../../common/constants';
+import { MEMPOOL_SPACE_API, XVERSE_TESTNET_API } from '../common/constants';
 
 const VALID_CURRENCIES = ["USD", "EUR", "GBP", "CAD", "AUD", "CHF", "JPY"];
 

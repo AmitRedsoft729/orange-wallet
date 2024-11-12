@@ -1,6 +1,6 @@
 import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
 import axios from 'axios';
-import { HIRO_ORD } from '../utils/constants';
+import { HIRO_ORD } from '../common/constants';
 
 @Injectable()
 export class Brc20TokenBalanceService {

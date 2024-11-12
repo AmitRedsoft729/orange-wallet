@@ -1,6 +1,6 @@
 import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
 import axios from 'axios';
-import { API_TIMEOUT, CRYPTOCOMPARE_API, XVERSE_TESTNET_API } from '../../utils/constants';
+import { API_TIMEOUT, CRYPTOCOMPARE_API, XVERSE_TESTNET_API } from '../../common/constants';
 
 @Injectable()
 export class PriceStxService {

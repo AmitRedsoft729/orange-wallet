@@ -1,6 +1,6 @@
 import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
 import axios from 'axios';
-import { API_TIMEOUT, STACKS_DOMAINS_API } from '../utils/constants';
+import { API_TIMEOUT, STACKS_DOMAINS_API } from '../common/constants';
 
 @Injectable()
 export class BtcNameResolveService {

@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { MEMPOOL_SPACE_API } from '../utils/constants';
+import { MEMPOOL_SPACE_API } from '../common/constants';
 
 @Injectable()
 export class AppConfigService {
