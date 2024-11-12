@@ -21,11 +21,22 @@
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
+    "@nestjs/config": "^3.3.0",
     "@nestjs/core": "^10.0.0",
     "@nestjs/platform-express": "^10.0.0",
+    "@stacks/transactions": "^7.0.0",
+    "axios": "^1.7.7",
+    "bignumber.js": "^9.1.2",
+    "bitcoin-address-validation": "^2.2.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "node-cache": "^5.1.2",
     "nodemon": "^3.1.7",
+    "pm2": "^5.4.2",
     "reflect-metadata": "^0.2.0",
-    "rxjs": "^7.8.1"
+    "rxjs": "^7.8.1",
+    "web3": "^4.15.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.0.0",
